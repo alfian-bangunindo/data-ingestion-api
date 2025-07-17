@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-SFTP_HOST = os.getenv("SFTP_HOST")
-SFTP_USER = os.getenv("SFTP_USER")
-SFTP_PASSWORD = os.getenv("SFTP_PASSWORD")
+SFTP_HOST = os.environ["SFTP_HOST"]
+SFTP_USER = os.environ["SFTP_USER"]
+SFTP_PASSWORD = os.environ["SFTP_PASSWORD"]
 SFTP_PORT = int(os.environ["SFTP_PORT"])
 
 API_URL = "https://api.ekraf.go.id/posts"

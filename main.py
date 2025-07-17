@@ -74,7 +74,7 @@ def transform(data_extraction_path: str) -> str | None:
     headers = data[0].keys()
     print("Data transform successful!")    
 
-    transformed_data_path = f"{DATA_DIR}/transformed_data_{CURRENT_DATE}.json"
+    transformed_data_path = f"{DATA_DIR}/transformed_data_{CURRENT_DATE}.csv"
     
     try:
         with open(transformed_data_path, "w", newline="") as fp:
